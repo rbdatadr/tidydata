@@ -25,7 +25,7 @@ test.sub <- read.csv("UCI HAR Dataset/test/subject_test.txt", header=F, sep="")
 train.sub <- read.csv("UCI HAR Dataset/train/subject_train.txt", header=F, sep="")
 data$subject <- c(test.sub$V1, train.sub$V1)
 
-library(rshape2)
+library(reshape2)
 mdata <- melt(data, id=c("subject", "activity"))
 cdata <- dcast(mdata, subject + activity ~ variable, mean)
 

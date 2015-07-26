@@ -77,3 +77,13 @@ The dataset.txt file contains 180 rows, and 68 columns. Each provides average va
 66 fBodyBodyGyroMag_std     
 67 fBodyBodyGyroJerkMag_mean 
 68 fBodyBodyGyroJerkMag_std 
+
+## Transformations:
+
+The original data is partitioned into two sets: the training data and the test data. I have merged these two sets into one. 
+
+The original data set contains 561 features, among which 66 are the mean values and standard deviations of certain measurements. In the cleaned data set, only these 66 features are included.
+
+Information about the subject and the activity are originally included in two other files. In the cleaned dataset, these are included as two additional features. 
+
+Finally, in the dataset.txt file, I’ve included the average values of the above mentioned 66 features, for each subject and each activity. For this purpose, “melt” and “dcast” functions from the reshape2 package are used. 
