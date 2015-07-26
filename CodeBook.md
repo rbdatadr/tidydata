@@ -5,7 +5,7 @@ The data in dataset.txt is a tidied version of [this dataset]
 
 ## Attribute Information:
 
-The dataset.txt file contains 180 rows, and 68 columns. Each provides average values of mean and standard deviation of the measured values reported in the original data set, for each f the 30 subjects and each of the six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
+The dataset.txt file contains 180 rows, and 68 columns. Each column provides average values of the mean and standard deviation of the measurements reported in the original data set. Each row corresponds to a subject (out of 30) and an activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 
 #### The following is the complete list of the attributes:
 
@@ -84,6 +84,6 @@ The original data is partitioned into two sets: the training data and the test d
 
 The original data set contains 561 features, among which 66 are the mean values and standard deviations of certain measurements. In the cleaned data set, only these 66 features are included.
 
-Information about the subject and the activity are originally included in two other files. In the cleaned dataset, these are included as two additional features. 
+Information about the subject and the activity are originally included in two other files. In the cleaned dataset, these are included as two additional columns. 
 
 Finally, in the dataset.txt file, I’ve included the average values of the above mentioned 66 features, for each subject and each activity. For this purpose, “melt” and “dcast” functions from the reshape2 package are used. 
