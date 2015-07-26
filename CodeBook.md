@@ -7,7 +7,7 @@ The data in dataset.txt is a tidied version of [this dataset]
 
 The dataset.txt file contains 180 rows, and 68 columns. Each provides average values of mean and standard deviation of the measured values reported in the original data set, for each f the 30 subjects and each of the six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 
-# The following is the complete list of the attributes:
+#### The following is the complete list of the attributes:
 
  1 subject                   
  2 activity                
