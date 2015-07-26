@@ -7,10 +7,12 @@ This repository contains the R code for cleaning the data set available [here](h
     train <- read.csv("UCI HAR Dataset/train/X_train.txt", header=F, sep="")
 ```
 
-2. Each data frame contains 561 features. From these we need only the following 66 features. 
+2. Each data frame contains 561 features. From these we need only 66 features. 
 
 ```
-    sel <- c(1:6, 41:46, 81:86, 121:126, 161:166, 201, 202, 214, 215, 227, 228, 240, 241, 253, 254, 266:271, 345:350, 424:429, 503, 504, 516, 517, 529, 530, 542, 543)
+    sel <- c(1:6, 41:46, 81:86, 121:126, 161:166, 201, 202, 214, 215, 
+             227, 228, 240, 241, 253, 254, 266:271, 345:350, 424:429, 
+             503, 504, 516, 517, 529, 530, 542, 543)
     
     train.sel <- train[, sel]
     test.sel <- test[, sel]
