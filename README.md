@@ -3,8 +3,8 @@ This repository contains the R code for cleaning the data set available [here](h
 1. First step is to read the data:
 
 ```
-   test <- read.csv("UCI HAR Dataset/test/X_test.txt", header=F, sep="")
-   train <- read.csv("UCI HAR Dataset/train/X_train.txt", header=F, sep="")
+test <- read.csv("UCI HAR Dataset/test/X_test.txt", header=F, sep="")
+train <- read.csv("UCI HAR Dataset/train/X_train.txt", header=F, sep="")
 ```
 2. Each data frame contains 561 features. From these we need only 66 features. 
 
